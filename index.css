@@ -1,0 +1,98 @@
+html{
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+}
+.bunner{
+    position: relative;
+    height: 98vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.videoBtn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 5%;
+    bottom: 7%;
+    height: 70px;
+    width:70px;
+    border: 1px solid  black;
+    background-color: transparent;
+    color: #11396C;
+    border-radius: 70px;
+    z-index: 100;
+}
+.videoBtn:hover{
+    background:linear-gradient(rgb(255,255,255,0.2),rgb(255,255,255,0.1));
+    cursor: pointer;
+}
+header{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    z-index: 100;
+    height: 20%;
+    width: 100%;
+    margin-top: 1%;
+}
+.logo{
+    background-image:url(/Assets/logo.png);
+    background-size: cover;
+    height: 100%;
+    width: 10%;
+    margin-left: 3%;
+    filter: drop-shadow(2px 2px 30px black);
+}
+.navigation{
+    position: relative;
+    height: fit-content;
+    width: 40%;
+}
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+}
+.navigation ul li , a{
+    color: #ffff;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+    filter: drop-shadow(2px 2px 30px black);
+}
+.contactInfo{
+    display: flex;
+    position: absolute;
+    width: 7%;
+    align-items: center;
+    justify-content: space-between;
+    right: 3%;
+    top: 5%;
+    color: #ffff;
+    filter: drop-shadow(2px 2px 30px black);
+}
+.sectionNav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 0.1vw;
+    bottom: 5%;
+    right: 5%;
+    background-color: #000;
+    z-index: 100;
+}
+.sectionNav a{
+    height: 17px;
+    width: 17px;
+    border-radius: 20px;
+    background-color:#eee;
+    filter: drop-shadow(2px 2px 30px black);
+}
+.sectionNav a:nth-child(1){
+    background-color: #11396C;
+}
