@@ -14,11 +14,12 @@
 </head>
 <body>
     <video src="/Assets/bunner vid.mp4" controls style="display: none;"></video>
+    <video src="/Assets/meet the future.mp4" controls style="display: none;"></video>
     <div id="app">
-        <div class="bunner">
+        <div  id="section_1" class="bunner">
             <header>
-                <div class="logo"></div>
-                <div class="navigation">
+                <div class="logo" :class="{'onPlayLogo': !videoStatus}"></div>
+                <div class="navigation" :class="{'onPlayNav': !videoStatus}">
                     <ul>
                        <li><a href="">Apply</a></li>
                        <li><a href="">Student Life</a></li>
@@ -26,20 +27,45 @@
                        <li><a href=""><i class="fa-solid fa-user fa-xs"></i> My Tree</a> </li>
                     </ul>
                 </div>
-                <div class="contactInfo">
+                <div class="contactInfo" :class="{'onPlayContact':!videoStatus}">
                     <i class="fa-solid fa-phone fa-xl"></i>
                     <i class="fa-solid fa-location-dot fa-xl"></i>
                     <i class="fa-solid fa-globe fa-xl"></i>
                 </div>
             </header>
-            <video src="/Assets/bunner vid.mp4" controls autoplay="true"></video>
-            <button class="videoBtn"><i class="fa-solid fa-play fa-xl"></i></button>
+            <video id="vid" src="/Assets/bunner vid.mp4" autoplay muted></video>
+            <button class="videoBtn" @click="toggleVideo"><i :class="videoPlayPack[videoStatus]"></i></button>
             <div class="sectionNav">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+                <a href="#section_1"></a>
+                <a href="#section_2" @click="mouseofset"></a>
+                <a href="#section_3"@click="mouseofset"></a>
                 <a href=""></a>
             </div>
+        </div>
+        <div id="section_2" class="SchoolValues">
+           <div class="headings" :class="{'headingOne': slectedValue==0 ? true : false,'headingTwo': slectedValue==1 ? true : false,'headingThree': slectedValue==2 ? true : false}">
+                <span>Values</span>
+                <span>Mission</span>
+                <span>Vision</span>
+           </div>
+           <div class="seprate"></div>
+            <div class="content">
+                <transition>
+                    <span :key="slectedValue">
+                        {{schoolValues[slectedValue]}}
+                    </span>
+                </transition>
+           </div>
+           <div class="seprate" style="margin-top: 7%;"></div>
+        </div>
+        <div id="section_3" class="meetFuture">
+            <h1>Meet The Future</h1>
+            <span>Students at Wisdom Tree are bold, courageous and dynamic, ready to meet the future head on. <br> They define their own path through the choices they make and the opportunities they embrace.</span>
+            <div class="video" :class="{'onplayVideo':!meetFutureVid}">
+                <video id="meetFutureVid" src="/Assets/meet the future.mp4"></video>
+                <button @click="meetFutureToggle"><i :class="videoPlayPack[meetFutureVid]"></i></button>
+            </div>
+            <span>When you ask Shyla Baravkar, a Year 3 student at Melbourne Girls Grammar, how we can help make steps to reduce climate change, she maintains that it’s all about the little things we can all do that add up to big improvements.</span>
         </div>
     </div>
     <script src="index.js"></script>

@@ -1,12 +1,16 @@
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 *{
     font-family: 'Cairo', sans-serif;
 }
+#app{
+    height: 300vh;
+}
 .bunner{
     position: relative;
-    height: 98vh;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
@@ -36,15 +40,20 @@ header{
     z-index: 100;
     height: 20%;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 0.5%;
 }
 .logo{
     background-image:url(/Assets/logo.png);
+    cursor: pointer;
     background-size: cover;
     height: 100%;
     width: 10%;
     margin-left: 3%;
     filter: drop-shadow(2px 2px 30px black);
+}
+.onPlayLogo{
+    transition: all 200ms ease-in-out;
+    opacity:0.5 ;
 }
 .navigation{
     position: relative;
@@ -62,19 +71,40 @@ header{
     font-size: 1.3rem;
     filter: drop-shadow(2px 2px 30px black);
 }
+.onPlayNav ul a{
+    transition: all 200ms ease-in-out;
+    color: #ffffff75;
+    filter: drop-shadow(2px 2px 30px black);
+}
+.navigation a:hover{
+    transition: all 200ms ease;
+    color: #11396C;
+}
 .contactInfo{
     display: flex;
     position: absolute;
     width: 7%;
+    height: fit-content;
     align-items: center;
     justify-content: space-between;
-    right: 3%;
-    top: 5%;
+    right: 3%; 
+    top: 0;
+    margin-top: 2%;
     color: #ffff;
     filter: drop-shadow(2px 2px 30px black);
 }
+.onPlayContact{
+    transition: all 200ms ease-in-out;
+    color: #ffffff75;
+    filter: drop-shadow(2px 2px 30px black);
+}
+.contactInfo i:hover{
+    transition: all 200ms ease;
+    cursor: pointer;
+    color: #eee;
+}
 .sectionNav{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,9 +120,134 @@ header{
     height: 17px;
     width: 17px;
     border-radius: 20px;
-    background-color:#eee;
+    background-color:rgba(238, 238, 238, 0.756);
     filter: drop-shadow(2px 2px 30px black);
 }
 .sectionNav a:nth-child(1){
     background-color: #11396C;
+}
+.sectionNav a:hover{
+    transition: all 200ms ease;
+    background-color: #90b6e9;
+}
+.More{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 2vh;
+    justify-content: center;
+}
+.SchoolValues{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+}
+.headings{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.headings span{
+    font-size: 2rem;
+    color: #11386c69;
+}
+
+.headingOne span:nth-child(1){
+    color: rgb(17, 56, 108);
+    font-weight: 900;
+    font-style: italic;
+}
+.headingTwo span:nth-child(2){
+    color: rgb(17, 56, 108);
+    font-weight: 900;
+    font-style: italic;
+}
+.headingThree span:nth-child(3){
+    color: rgb(17, 56, 108);
+    font-weight: 900;
+    font-style: italic;
+}
+.seprate{
+    height: 0.2vh;
+    width: 60vw;
+    background-color: #11386c43;
+    margin-top: 2%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #11396C;
+    width: 50vw;
+    height: 50%;
+}
+@keyframes fadeIn {
+    
+    0%{
+        
+        transition: all 500ms ease-in-out;
+        transform: scale(0.98);  
+        opacity: 0.2;
+    }
+    100%{
+        
+        transition: all 500ms ease-in-out;
+        transform: scale(1);  
+
+    }
+}
+
+.v-enter-active {
+    animation: fadeIn 0.6s ease-in;
+}
+.v-leave-active,
+.v-leave-to {
+    display: none;
+}
+.meetFuture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #11396C;
+    text-align: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: fit-content;
+    overflow: hidden;
+    margin-top: 8vh;
+}
+.video video{
+    object-fit: cover;
+    width: 98vw;
+}
+.video button{
+    position: absolute;
+    height: 15vh;
+    width: 15vh;
+    align-self: center;
+    border-radius: 60px;
+    border: 0.5px solid #fff;
+    background-color:transparent ;
+    z-index: 100;
+}
+.onplayVideo button{
+    opacity: 0.1;
+}
+.video button:hover{
+    transition: all 700ms ease;
+    background-color: #eeeeee38;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.video button i{
+    color: #fff;
 }
