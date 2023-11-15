@@ -11,6 +11,8 @@ const app = Vue.createApp({
                 'Our vision at Wisdom Tree School is to be a leading educational institution that prepares students for success in the 21st century. We envision a school where students are engaged in meaningful and innovative learning experiences, where they develop a deep understanding of diverse perspectives, and where they are motivated to become responsible global citizens.',
             ],
             slectedValue:0,
+            valuesInterval:null,
+            activeSection: 1 ,
         }
     },
     methods: {
@@ -33,18 +35,35 @@ const app = Vue.createApp({
                 document.getElementById('meetFutureVid').pause()
             }
         },
-        mouseofset(){
-            console.log(window.OffscreenCanvas)
+
+        sectionNav(){
+            if (window.scrollY< document.body.scrollHeight * 0.20) {
+                this.activeSection = 1
+            }
+            else if (window.scrollY > document.body.scrollHeight * 0.20 &&window.scrollY < document.body.scrollHeight * 0.34 ) {
+                this.activeSection =2
+            }
+            else if (window.scrollY > document.body.scrollHeight * 0.34 && window.scrollY < document.body.scrollHeight * 0.68 ) {
+                this.activeSection =3
+            }
+           
         },
+       
+        stopInterval(){
+            clearInterval(this.valuesInterval)
+        }
+
     },
     mounted() {
-        setInterval(() => {
+        this.valuesInterval=setInterval(() => {
             if (this.slectedValue < this.schoolValues.length-1) {
                 this.slectedValue+=1
             }else{
                 this.slectedValue = 0
             }
         }, 5000);
+
+        window.addEventListener('scroll', this.sectionNav);
     
     },
 }).mount('#app')

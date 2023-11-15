@@ -35,18 +35,18 @@
             </header>
             <video id="vid" src="/Assets/bunner vid.mp4" autoplay muted></video>
             <button class="videoBtn" @click="toggleVideo"><i :class="videoPlayPack[videoStatus]"></i></button>
-            <div class="sectionNav">
-                <a href="#section_1"></a>
-                <a href="#section_2" @click="mouseofset"></a>
-                <a href="#section_3"@click="mouseofset"></a>
-                <a href=""></a>
+            <div class="sectionNav" :class="{'section_1': activeSection ==1? true : false , 'section_2': activeSection ==2? true : false ,'section_3': activeSection ==3? true : false }">
+                <a href="#section_1" ></a>
+                <a href="#section_2" ></a>
+                <a href="#section_3" ></a>
+                <a href="" ></a>
             </div>
         </div>
         <div id="section_2" class="SchoolValues">
            <div class="headings" :class="{'headingOne': slectedValue==0 ? true : false,'headingTwo': slectedValue==1 ? true : false,'headingThree': slectedValue==2 ? true : false}">
-                <span>Values</span>
-                <span>Mission</span>
-                <span>Vision</span>
+                <span @click="slectedValue=0 , stopInterval()" >Values</span>
+                <span @click="slectedValue=1,stopInterval()">Mission</span>
+                <span @click="slectedValue=2,stopInterval()">Vision</span>
            </div>
            <div class="seprate"></div>
             <div class="content">
@@ -56,16 +56,25 @@
                     </span>
                 </transition>
            </div>
-           <div class="seprate" style="margin-top: 7%;"></div>
+        </div>
+        <div class="sectionSeprator">
+            <div></div>
+            <i class="fa-solid fa-leaf fa-2xl"></i>
+            <div></div>
         </div>
         <div id="section_3" class="meetFuture">
-            <h1>Meet The Future</h1>
-            <span>Students at Wisdom Tree are bold, courageous and dynamic, ready to meet the future head on. <br> They define their own path through the choices they make and the opportunities they embrace.</span>
+            <div>
+                <h1>Meet The Future</h1>
+                <span>Students at Wisdom Tree are bold, courageous and dynamic, ready to meet the future head on. <br> They define their own path through the choices they make and the opportunities they embrace.</span>
+            </div>
+            
             <div class="video" :class="{'onplayVideo':!meetFutureVid}">
                 <video id="meetFutureVid" src="/Assets/meet the future.mp4"></video>
                 <button @click="meetFutureToggle"><i :class="videoPlayPack[meetFutureVid]"></i></button>
             </div>
-            <span>When you ask Shyla Baravkar, a Year 3 student at Melbourne Girls Grammar, how we can help make steps to reduce climate change, she maintains that it’s all about the little things we can all do that add up to big improvements.</span>
+            <div>
+                <span>When you ask Shyla Baravkar, a Year 3 student at Melbourne Girls Grammar, how we can help make steps to reduce climate change, she maintains that it’s all about the little things we can all do that add up to big improvements.</span>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
