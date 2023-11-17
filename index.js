@@ -13,6 +13,7 @@ const app = Vue.createApp({
             slectedValue:0,
             valuesInterval:null,
             activeSection: 1 ,
+            registrationOverlay: false,
         }
     },
     methods: {
