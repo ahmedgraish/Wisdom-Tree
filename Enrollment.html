@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enrollment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17ddf34e1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Enrollment</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="/Assets/logo.png" alt="" onclick="window.location.href='index.html'">
+            <div class="contactInfo">
+                <i class="fa-solid fa-phone fa-xl"> 
+                </i>
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+                <i class="fa-solid fa-user fa-xl"  @click="registrationOverlay = true"> My Tree</i>
+            </div>
+        </header>
+        <div class="registration" :class="{'registrationActive':registrationOverlay}" @click.self="registrationOverlay=false">
+            <div class="register" :class="{'registerActive':registrationOverlay}">
+                <div class="sign">  
+                    <h2>Welcome back to the Tree of Wisdom and Knowledge</h2>
+                    <span>Wisdom Tree School Account</span>
+                    <input type="email" placeholder="Student Id">
+                    <input type="password" placeholder="password">
+                    <a href="">Sign In <i class="fa-solid fa-arrow-right fa-2xs" style="color: #ffffff; margin: 2% 5% 0;"></i></a>
+                    <span>Don't have an account? <a href="" style="text-underline-offset: 4px; color:#11386cb7;">contant IT dep</a></span>
+                </div>
+                <div class="panel">
+                    <div></div>
+                    <video src="/Assets/mixkit-girl-walking-to-school-5886-medium.mp4" autoplay muted ></video>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <span onclick="window.location.href='index.html'">Home<div></div></span> >
+            <h1> <a href="#admission">Enrollment Process</a><div></div></h1>
+        </nav>
+        <section id="admission" class="schoolYearAnnouncement">
+            <h1>ADMISSIONS</h1>
+            <p>
+                We are now accepting applications for the 2023-24 school year for Kindergarten through eighth grade. Our admissions process is designed to help your family explore the new science of learning in the 21st century, then decide if this is the right fit for you. You can read, watch videos, and participate in events to learn more, then take your next step with our fast and easy online application.
+            </p>
+            
+            <span><a href="#main">Learn More</a></span>
+            <div></div>
+
+        </section>
+        <main id="main">
+            <section class="engage" :class="{'engageActive':engageActivate}">
+                <span class="material-symbols-outlined">rocket_launch</span>
+                <div></div>
+                <h2>1. Engage</h2>
+                <p>
+                    We want to meet you and share our excitement. Learn with us. Attend an info session and discover what makes Wisdom Tree different.
+                </p>
+            </section>
+            <section class="engage" :class="{'engageActive':engageActivate}">
+                <span class="material-symbols-outlined">floor</span>     
+                <div></div>
+                <h2>2. Apply</h2>
+                <p>
+                    We want to meet you and share our excitement. Learn with us. Attend an info session and discover what makes Wisdom Tree different.
+                </p>
+            </section>
+            <section class="engage" :class="{'engageActive':engageActivate}">
+                <span class="material-symbols-outlined">task_alt</span>                
+                <div></div>
+                <h2>3. Register</h2>
+                <p>
+                    We want to meet you and share our excitement. Learn with us. Attend an info session and discover what makes Wisdom Tree different.
+                </p>
+            </section>
+            <section class="engage" :class="{'engageActive':engageActivate}">
+                <span class="material-symbols-outlined">location_on</span>
+                <div></div>
+                <h2>4. Start</h2>
+                <p>
+                    We want to meet you and share our excitement. Learn with us. Attend an info session and discover what makes Wisdom Tree different.
+                </p>
+            </section>
+            
+        </main>
+
+
+    </div>
+
+    <script src="enrollment.js"></script>
+</body>
+</html>
