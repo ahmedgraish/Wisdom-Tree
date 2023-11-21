@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/17ddf34e1a.js" crossorigin="anonymous"></script>
     <title>Wisdom Tree</title>
+    <link rel="icon" href= "/Assets/logo.png" type="image/x-icon"> 
+  
+     
+     
 </head>
 <body>
     <video src="/Assets/bunner vid.mp4" controls style="display: none;"></video>
@@ -35,11 +39,11 @@
             </header>
             <video id="vid" src="/Assets/bunner vid.mp4" autoplay muted></video>
             <button class="videoBtn" @click="toggleVideo"><i :class="videoPlayPack[videoStatus]"></i></button>
-            <div class="sectionNav" :class="{'section_1': activeSection ==1? true : false , 'section_2': activeSection ==2? true : false ,'section_3': activeSection ==3? true : false }">
+            <div class="sectionNav" :class="{'section_1': activeSection ==1? true : false , 'section_2': activeSection ==2? true : false ,'section_3': activeSection ==3? true : false , 'section_4': activeSection ==4? true : false }">
                 <a href="#section_1" ></a>
                 <a href="#section_2" ></a>
                 <a href="#section_3" ></a>
-                <a href="" ></a>
+                <a href="#section_4" ></a>
             </div>
         </div>
         <div id="section_2" class="SchoolValues">
@@ -72,10 +76,91 @@
                 <video id="meetFutureVid" src="/Assets/meet the future.mp4"></video>
                 <button @click="meetFutureToggle"><i :class="videoPlayPack[meetFutureVid]"></i></button>
             </div>
-            <div>
-                <span>When you ask Shyla Baravkar, a Year 3 student at Melbourne Girls Grammar, how we can help make steps to reduce climate change, she maintains that it’s all about the little things we can all do that add up to big improvements.</span>
+            
+            <div class="meetFuture2">
+                <span>When you ask Shyla Baravkar, a Year 3 student at Melbourne Girls Grammar, <br>how we can help make steps to reduce climate change,<br> she maintains that it’s all about the little things we can all do that add up to big improvements.</span>
             </div>
         </div>
+        <div class="sectionSeprator2">
+            <div></div>
+            <i class="fa-solid fa-leaf fa-2xl"></i>
+            <div></div>
+        </div>
+        <div class="meetFuture2">
+            <h1>Certificates granted by our school</h1>
+        </div>
+        <div >
+            
+                
+            <section id="section_4" class="Certificates" >
+                <div class="navCertificates" >
+                    <img src = "/Assets/TOEFL2.png" alt=""onclick="window.location.href='https://www.ets.org/toefl.html'">
+                    
+                </div>
+                <div class="navCertificates">
+                    <img src="/Assets/IELTS2.png" alt=""onclick="window.location.href='https://ielts.org/'">
+                    
+                </div>
+                <div class="navCertificates">
+                    <img src="/Assets/CFP.png" alt=""onclick="window.location.href='https://www.cfp.net/'">
+                    
+                </div>
+                
+            </section>
+
+
+            
+        </div>
+     
+        <footer class="footer_section">
+           
+                <div class="w-row">
+                   <div class="footer-column w-clearfix w-col w-col-4">
+                     <img src="/Assets/logo.png"  class="failory-logo-image">
+                   </div>
+                </div>
+                   
+
+                   <h2 class="h-failory">+21865564546</h2>
+                   <h3 class="h-failory2">The virtuous city next to Aflatoun Center</h3>
+                   
+                    <div class="h-failory3">
+                        <ul>
+                           <li><a href="">Apply</a></li>
+                           <br>
+                           <li><a href="">Student Life</a></li>
+                            <br>
+                           <li><a href="">Our Staff</a></li>
+                           <br>
+                          <li><a href=""> My Tree</a> </li>
+                        </ul>
+                    </div>
+                       <div class="h-failory4">
+                          <ul>
+                              <li><a href="">Apply</a></li>
+                              <br>
+                              <li><a href="">Student Life</a></li>
+                              <br>
+                              <li><a href="">Our Staff</a></li>
+                              <br>
+                               <li><a href=""> My Tree</a> </li>
+                           </ul>
+                       </div>
+                   
+                        <input class="navCertificates2"  type="text" placeholder=" Your Email address">
+                        <button class="navCertificates3" >submit</button>
+                      
+                        <div class="footer_social">
+                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                          </div>
+        
+        </footer>
+        <!-- Footer -->
+
+
+        
     </div>
     <script src="index.js"></script>
 </body>

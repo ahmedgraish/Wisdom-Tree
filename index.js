@@ -40,12 +40,17 @@ const app = Vue.createApp({
             if (window.scrollY< document.body.scrollHeight * 0.20) {
                 this.activeSection = 1
             }
-            else if (window.scrollY > document.body.scrollHeight * 0.20 &&window.scrollY < document.body.scrollHeight * 0.34 ) {
-                this.activeSection =2
+            else if (window.scrollY > document.body.scrollHeight * 0.20 && window.scrollY < document.body.scrollHeight * 0.34 ) {
+                this.activeSection = 2
             }
             else if (window.scrollY > document.body.scrollHeight * 0.34 && window.scrollY < document.body.scrollHeight * 0.68 ) {
-                this.activeSection =3
+                this.activeSection = 3
             }
+            else if (window.scrollY > document.body.scrollHeight * 0.68 && window.scrollY < document.body.scrollHeight * 0.92 ) {
+                this.activeSection = 4
+            }
+            
+            
            
         },
        

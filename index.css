@@ -16,6 +16,8 @@ html{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+   
+
 }
 .videoBtn{
     position: absolute;
@@ -141,6 +143,14 @@ header{
     padding: 3px 0 3px;
     background-color: #11396C;
 }
+.section_4 a:nth-child(4){
+    transition: all 400ms ease;
+    padding: 3px 0 3px;
+    background-color: #11396C;
+
+}
+
+
 .sectionNav a:hover{
     transition: all 200ms ease;
     background-color: #90b6e9;
@@ -169,6 +179,7 @@ header{
     font-size: 2rem;
     color: #11386c69;
 }
+
 .headings span:hover{
     transition: all 300ms ease;
     cursor: pointer;
@@ -232,34 +243,69 @@ header{
     height: fit-content;
     color: #11386c9d;
     width: 50%;
-    margin: 20vh 0 10vh ;
+    margin: 5vh 0 5vh ;
 }
+
 .sectionSeprator div{
-    height: 0.1vh;
+    height: 0.2vh;
     width: 46%;
     background-color: #11386c9c;
     z-index: 1000;
 }
-
+.sectionSeprator2{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    color: #11386c9d;
+    width: 50%;
+    margin: 5vh 0 5vh ;
+}
+.sectionSeprator2 div{
+    height: 0.2vh;
+    width: 46%;
+    background-color: #11386c9c;
+    
+}
 .meetFuture{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #11396C;
     font-size: 1.6rem;
-    height: 170vh;
+    height: 143vh;
 }
+
 .meetFuture span{
     text-align: center;
     font-size: 1.2rem;
 }
+.meetFuture2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #11396C;
+    font-size: 1.6rem;
+    height: 15vh;
+
+}
+.meetFuture2 span{
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
 .video{
     display: flex;
     justify-content: center;
-    height: 90vh;
     width: fit-content;
     overflow: hidden;
     margin-top: 8vh;
+    padding: 10px 0 10px 0;
+   
+
+
+    
+
 }
 .video video{
     object-fit: cover;
@@ -287,3 +333,231 @@ header{
 .video button i{
     color: #fff;
 }
+
+.Certificates {
+   
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    
+
+
+}
+.navCertificates{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 100px;
+    height: 60%;
+    width: 30%;
+    background-color: #11396C;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.3),3px 3px 10px rgba(0, 0, 0, 0.2);
+	transition: 1.5s; 
+		
+}
+.navCertificates img ,h1 ,p{
+    margin: 0;
+    width: 80%;
+    height: fit-content;
+    transform: translateY(-20px);
+}
+.navCertificates img{
+    margin-top: 10%;
+    background-color: white;
+    border-radius: 20px;
+}
+.navCertificates img:hover
+		{
+			transform:translateZ(-20px);
+		}
+
+.navCertificates2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 150px;
+    height: 6%;
+    width: 20%;
+    background-color: #ffffff;	
+    margin-left:65%;
+    float:left;
+    position: absolute;
+    margin-top: 2%;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3),10px 10px 15px rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+
+.navCertificates3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 150px;
+    height: 5%;
+    width: 7.5%;
+    background-color: #ffffff ;	
+    margin-left:86%;
+    float:left;
+    position: absolute;
+    margin-top: 2.3%;
+    box-shadow: -10px 15px 25px rgba(0, 0, 0, 0.3),10px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 3px #ccc;
+
+
+}
+
+
+  .navCertificates3:active {
+    background-color: #90b6e9;
+    color: #ffffff;
+	transition: 0.1s; 
+    box-shadow: 0 5px 10px #ccc;
+    border-radius: 180px;
+  }
+
+
+/* footer section*/
+.footer_section {
+    background-color: #11396C;
+    color: #ffffff;
+    padding: 75px 0 40px 0;
+    display: inline;
+    width: 100%;
+    height: 7%;
+    overflow: hidden;
+    margin-top: 20vh;
+    
+  }
+  
+  .footer_section h4 {
+    font-size: 28px;
+  }
+  
+  .footer_section h4,
+  .footer_section .footer-logo {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .footer_social .footer-move {
+        float: left;
+        width: 100%;
+  }
+  .footer_social .footer-move .footer-move-left{
+    text-align: left; 
+    margin-left: 0px;
+    margin-top: 0%;
+    
+  }
+  .footer_social .footer-move .footer-move-center{
+    text-align: center;
+    margin-left: 10vh;
+  }
+
+  .footer_section .footer_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer_section .footer_social a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #11396C;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border-radius: 100%;
+    font-size: 210%;
+    margin-top: 14%;
+    margin-left: 4%;
+  }
+  
+  .footer_section .footer_social a:hover {
+    color: #90b6e9;
+  }
+  
+ 
+img.failory-logo-image {
+        margin-top: 0.1%;
+        margin-left: 43%;
+        width: 15%;
+        height:51%;
+        float:left;
+        margin-top: 0.01%;
+}  
+
+.h-failory{
+    margin-left: 45%;
+    margin-bottom: 0%;
+    float:left;
+    margin-top: 0.1%;
+
+    
+}
+.h-failory2{
+    display: inline;
+    margin-left: 39%;
+    margin-top: 0.5%;
+    float:left;
+}
+.h-failory3{
+    color: #ffffff;
+    display: inline;
+    margin-left:9%;
+    margin-top: 0.5%;
+    float:left;
+    opacity: 1;  
+    display: flex;
+    position: absolute;
+   
+}
+.h-failory3  li :hover{
+    color: #ffff;
+    opacity: 0.7;  
+
+}
+
+.h-failory4{
+    color: #ffffff;
+    display: inline;
+    margin-left:20%;
+    margin-top: 0.5%;
+    float:left;
+    display: flex;
+    position: absolute;
+   
+}
+
+
+.h-failory4  li :hover{
+    color: #ffff;
+    opacity: 0.7;  
+
+}
+
