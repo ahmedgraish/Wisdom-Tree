@@ -468,7 +468,7 @@ header{
 	transition: 1.5s; 
 		
 }
-.navCertificates img ,h1 ,p{
+.navCertificates img , .navCertificates h1 , .navCertificates p{
     margin: 0;
     width: 80%;
     height: fit-content;
@@ -479,10 +479,10 @@ header{
     background-color: white;
     border-radius: 20px;
 }
-.navCertificates img:hover
-		{
-			transform:translateZ(-20px);
-		}
+.navCertificates img:hover{
+    transition: all 0.8s ease;
+    transform:translatey(20px);
+}
 
 .navCertificates2{
     display: flex;
@@ -641,7 +641,6 @@ img.failory-logo-image {
     opacity: 1;  
     display: flex;
     position: absolute;
-   
 }
 .h-failory3  li :hover{
     color: #ffff;
@@ -659,11 +658,20 @@ img.failory-logo-image {
     position: absolute;
    
 }
-
-
 .h-failory4  li :hover{
     color: #ffff;
     opacity: 0.7;  
 
 }
+.footer_social a,
+.h-failory3 ul,
+.h-failory4 ul,
+.h-failory4 a,
+.h-failory3 a{
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none; 
+    list-style: none;
+}
+
 
