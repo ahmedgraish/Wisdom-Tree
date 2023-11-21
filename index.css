@@ -69,7 +69,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.navigation ul li , a{
+.navigation ul li ,.navigation a{
     color: #ffff;
     text-decoration: none;
     list-style: none;
@@ -97,6 +97,23 @@ header{
     margin-top: 2%;
     color: #ffff;
     filter: drop-shadow(2px 2px 30px black);
+}
+.contactInfo span{
+    position: absolute;
+    display: none;
+}
+.contactInfo i{
+    width: fit-content;
+    height: 20px;
+}
+.contactInfo i:nth-child(1):hover{
+    transition: all 700ms ease;
+    transform: translateX(-600%);
+}
+.contactInfo i:nth-child(1):hover > span{
+    transition: all 200ms ease;
+    transform: translateX(30%);
+    display: block;
 }
 .onPlayContact{
     transition: all 200ms ease-in-out;
@@ -161,6 +178,95 @@ header{
     width: 100%;
     height: 2vh;
     justify-content: center;
+}
+.registration{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c7c5c5d2;
+    z-index: 10000;
+}
+.register{
+    display: flex;
+    align-items: center;
+    height: 85%;
+    width: 75%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+.registerActive{
+   animation: overlay 0.2s ease; 
+}
+@keyframes overlay {
+    0%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.registrationActive{
+    display: flex;
+    animation: overlay 0.2s ease;
+}
+.panel,
+.sign{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    width: 50%;
+}
+.sign input, .sign span , .sign h2, .sign > a{
+    margin: 5% 8% 3% ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sign h2{
+    margin-top: 10%;
+    text-align: center;
+}
+.sign input{
+    height: 8%;
+    width: 70%;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+.sign > a{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    width: 25%;
+    background-color: #11386c9a;
+    border-radius: 10px;
+    filter: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+.sign > a:hover{
+    transition: all 300ms ease;
+    transform: translatex(2%);
+    padding-right: 2%;
+}
+.panel div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgba(56, 116, 255, 0.233), rgba(56, 116, 255, 0.233));
+}
+.panel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .SchoolValues{
     display: flex;

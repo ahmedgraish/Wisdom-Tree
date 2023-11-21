@@ -1,0 +1,223 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+}
+root{
+    --animation:none;
+}
+#app{
+    height: 400vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 20vh;
+    width: 100vw;
+    z-index: 1000;
+    filter: drop-shadow(2px 2px 30px black);
+}
+header div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2%;
+    width: 20%;
+    color: #eeee;
+    font-size: 0.9rem;
+}
+header div i:hover{
+    transition: all 200ms ease;
+    color: #eeeeee79;
+    cursor: pointer;
+}
+header img{
+    cursor: pointer;
+    scale:0.6;
+}
+@keyframes fadeIn {
+    
+    0%{
+        
+        transform: scale(0.98);  
+    }
+    100%{
+        
+        transform: scale(1);  
+
+    }
+}
+
+.v-enter-active {
+    animation: fadeIn 0.9s ease-in;
+}
+.v-leave-active,
+.v-leave-to {
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url(/Assets/enrollmentNavBg.jpg);
+    background-size: cover;
+    background-position:center;
+    color: white;
+    font-size: 2rem;
+}
+@keyframes underLine {
+    0%{
+        transition: all 200ms ease;
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+nav h1:hover ,nav a:hover,
+nav span:hover{
+    transition: all 200ms ease;
+    cursor: pointer;
+    color: #eeee;
+    --animation:underLine;
+}
+nav span{
+    position: relative;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav h1{
+    filter: drop-shadow(2px 2px 30px black);
+    position: relative;
+    margin-left: 1%;
+    margin-bottom: 3.5%;
+    text-decoration: none;
+}
+nav span div,
+nav h1 div{
+    position: absolute;
+    height: 2px;
+    background-color: #eeee;
+    animation: var(--animation) 0.5s ease forwards;
+}
+.registration{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #c7c5c5d2;
+    z-index: 10000;
+}
+.register{
+    display: flex;
+    align-items: center;
+    height: 85%;
+    width: 75%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+.registerActive{
+   animation: overlay 0.2s ease; 
+}
+@keyframes overlay {
+    0%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.registrationActive{
+    display: flex;
+    animation: overlay 0.2s ease;
+}
+.panel,
+.sign{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    width: 50%;
+}
+.sign input, .sign span , .sign h2, .sign > a{
+    margin: 5% 8% 3% ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sign h2{
+    margin-top: 10%;
+    text-align: center;
+}
+.sign input{
+    height: 8%;
+    width: 70%;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+.sign > a{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    width: 25%;
+    background-color: #11386c9a;
+    border-radius: 10px;
+    filter: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
+.sign > a:hover{
+    transition: all 300ms ease;
+    transform: translatex(2%);
+    padding-right: 2%;
+}
+.panel div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgba(56, 116, 255, 0.233), rgba(56, 116, 255, 0.233));
+}
+.panel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pageParts{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: 100vw;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.pageParts a{
+    position: relative;
+    text-decoration: none;
+    color: #747474;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.pageParts a > div{
+    position: absolute;
+    height: 1px;
+    background-color: #747474;
+}
+.pageParts a:hover > div{
+    animation: underLine 0.5s ease forwards;
+}
