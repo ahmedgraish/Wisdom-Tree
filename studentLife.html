@@ -44,7 +44,7 @@
         <transition>
             <nav :style="{ 'backgroundImage':'url('+ partsBunner[activePart][activeBunner]+')' }" :key="activePart">
                 <span onclick="window.location.href='index.html'">Home<div></div></span> <span> ></span>
-                <h1> <a href="#admission">{{pageParts[activePart]}}</a><div></div></h1>
+                <h1> <a href="#main">{{pageParts[activePart]}}</a><div></div></h1>
             </nav>
         </transition>
         <div class="pageParts">
@@ -53,6 +53,96 @@
             </a>
         </div>
         
+        <main id="main">
+            <h2>{{partsText[activePart][0].h1}}</h2>
+            <h3>{{partsText[activePart][0].h3}}</h3>
+            <p>{{partsText[activePart][0].p1}}</p>
+            <div class="gallary" :class="{'gallaryImgHover':imgHover}">
+                <div v-for="gallary in ImgGallary[activePart]">
+                    <img :src="gallary" alt="" @mouseover="imgHover = 'flex'"  @mouseleave="imgHover='none'">
+                    <i class="fa-solid fa-magnifying-glass-plus fa-xl" :style="'display:' +imgHover"></i>
+                </div>
+            </div>
+
+            <p>{{partsText[activePart][0].p2}}</p>
+
+            <div class="housingStaff">
+                <h1>Our People</h1>
+                <div class="staff">
+                    <img src="/Assets/houseStaff.jpg" alt="">
+                    <h2>miss alex - house guardian</h2>
+                    <p>
+                        have been a member of the St John’s family since 1999 and have always embraced the sense of community and team spirit the school encourages.
+                    </p>
+                </div>
+                <div class="staff">
+                    <img src="/Assets/houseStaff.jpg" alt="">
+                    <h2>miss alex - house guardian</h2>
+                    <p>
+                        have been a member of the St John’s family since 1999 and have always embraced the sense of community and team spirit the school encourages.
+                    </p>
+                </div>
+                <div class="staff">
+                    <img src="/Assets/houseStaff.jpg" alt="">
+                    <h2>miss alex - house guardian</h2>
+                    <p>
+                        have been a member of the Wisdom tree family since 1999 and have always embraced the sense of community and team spirit the school encourages.
+                    </p>
+                </div>
+            </div>
+            <div class="next">
+                <h1>What is Next ?</h1>
+                <div @click="activePart< pageParts.length-1? activePart++ : activePart = 0" onclick="window.scroll(0,100)">
+                    <i class="fa-solid fa-circle-arrow-right fa-2xl"></i>
+                    {{activePart< pageParts.length-1? pageParts[activePart+1] : pageParts[0]}}
+                </div>
+            </div>
+            <footer class="footer_section">
+           
+                <div class="w-row">
+                   <div class="footer-column w-clearfix w-col w-col-4">
+                     <img src="/Assets/logo.png"  class="failory-logo-image">
+                   </div>
+                </div>
+                   
+
+                   <h2 class="h-failory">+21865564546</h2>
+                   <h3 class="h-failory2">The virtuous city next to Aflatoun Center</h3>
+                   
+                    <div class="h-failory3">
+                        <ul>
+                           <li><a href="">Apply</a></li>
+                           <br>
+                           <li><a href="">Student Life</a></li>
+                            <br>
+                           <li><a href="">Our Staff</a></li>
+                           <br>
+                          <li><a href=""> My Tree</a> </li>
+                        </ul>
+                    </div>
+                       <div class="h-failory4">
+                          <ul>
+                              <li><a href="">Apply</a></li>
+                              <br>
+                              <li><a href="">Student Life</a></li>
+                              <br>
+                              <li><a href="">Our Staff</a></li>
+                              <br>
+                               <li><a href=""> My Tree</a> </li>
+                           </ul>
+                       </div>
+                   
+                        <input class="navCertificates2"  type="text" placeholder=" Your Email address">
+                        <button class="navCertificates3" >submit</button>
+                      
+                        <div class="footer_social">
+                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                          </div>
+        
+        </footer>
+        </main>
 
 
 

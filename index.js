@@ -17,6 +17,7 @@ const app = Vue.createApp({
         }
     },
     methods: {
+
         toggleVideo(){
             if (this.videoStatus === 0){
                 document.getElementById('vid').pause()
@@ -27,6 +28,7 @@ const app = Vue.createApp({
             }
             
         },
+
         meetFutureToggle(){
             if (this.meetFutureVid == 1) {
                 this.meetFutureVid =0
@@ -38,16 +40,16 @@ const app = Vue.createApp({
         },
 
         sectionNav(){
-            if (window.scrollY< document.body.scrollHeight * 0.20) {
+            if (window.scrollY< document.body.scrollHeight * 0.15) {
                 this.activeSection = 1
             }
-            else if (window.scrollY > document.body.scrollHeight * 0.20 && window.scrollY < document.body.scrollHeight * 0.34 ) {
+            else if (window.scrollY > document.body.scrollHeight * 0.15 && window.scrollY < document.body.scrollHeight * 0.34 ) {
                 this.activeSection = 2
             }
-            else if (window.scrollY > document.body.scrollHeight * 0.34 && window.scrollY < document.body.scrollHeight * 0.68 ) {
+            else if (window.scrollY > document.body.scrollHeight * 0.34 && window.scrollY < document.body.scrollHeight * 0.60 ) {
                 this.activeSection = 3
             }
-            else if (window.scrollY > document.body.scrollHeight * 0.68 && window.scrollY < document.body.scrollHeight * 0.92 ) {
+            else if (window.scrollY > document.body.scrollHeight * 0.60) {
                 this.activeSection = 4
             }
             
