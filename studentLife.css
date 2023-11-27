@@ -221,3 +221,229 @@ nav h1 div{
 .pageParts a:hover > div{
     animation: underLine 0.5s ease forwards;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #747474;
+}
+main h2 , main h3 , main p{
+    width: 70%;
+    margin-top: 5%;
+}
+main h2:first-child{
+    margin-top: 10%;
+}
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 50%;
+    margin-top: 5%;
+}
+.gallary div{
+    flex: 1 0 300px;
+    margin: 3px;
+    position: relative;
+}
+.gallary div i{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transition: all 50ms ease;
+}
+.gallary img{
+    width: 100%;
+    min-height: 280px;
+    height: fit-content;
+}
+.gallary img:hover{
+    transition: all 500ms ease;
+    filter: blur(1px);
+    cursor: pointer;
+}
+.housingStaff{
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    margin: 10% 0;
+}
+.housingStaff h1{
+    position: absolute;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transform: translateY(-250%);
+}
+.staff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.staff:hover{
+    transition: all 800ms ease;
+    cursor: pointer;
+    background:linear-gradient(rgba(226, 225, 225, 0.3), rgba(231, 229, 229, 0.3)) ;
+}
+.housingStaff img{
+    width: 100%;
+    object-fit: cover;
+}
+.next div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15vh;
+}
+.next div:hover{
+    transition: all 300ms ease;
+    color: #11396C;
+    cursor: pointer;
+}
+.footer_section {
+    background-color: #11396C;
+    color: #ffffff;
+    padding: 75px 0 40px 0;
+    display: inline;
+    width: 100%;
+    height: 7%;
+    overflow: hidden;
+    margin-top: 20vh;
+    
+  }
+  
+  .footer_section h4 {
+    font-size: 28px;
+  }
+  
+  .footer_section h4,
+  .footer_section .footer-logo {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .footer_social .footer-move {
+        float: left;
+        width: 100%;
+  }
+  .footer_social .footer-move .footer-move-left{
+    text-align: left; 
+    margin-left: 0px;
+    margin-top: 0%;
+    
+  }
+  .footer_social .footer-move .footer-move-center{
+    text-align: center;
+    margin-left: 10vh;
+  }
+
+  .footer_section .footer_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer_section .footer_social a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #11396C;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border-radius: 100%;
+    font-size: 210%;
+    margin-top: 14%;
+    margin-left: 4%;
+  }
+  
+  .footer_section .footer_social a:hover {
+    color: #90b6e9;
+  }
+  
+ 
+img.failory-logo-image {
+        margin-top: 0.1%;
+        margin-left: 43%;
+        width: 15%;
+        height:51%;
+        float:left;
+        margin-top: 0.01%;
+}  
+
+.h-failory{
+    margin-left: 45%;
+    margin-bottom: 0%;
+    float:left;
+    margin-top: 0.1%;
+
+    
+}
+.h-failory2{
+    display: inline;
+    margin-left: 39%;
+    margin-top: 0.5%;
+    float:left;
+}
+.h-failory3{
+    color: #ffffff;
+    display: inline;
+    margin-left:9%;
+    margin-top: 0.5%;
+    float:left;
+    opacity: 1;  
+    display: flex;
+    position: absolute;
+}
+.h-failory3  li :hover{
+    color: #ffff;
+    opacity: 0.7;  
+
+}
+
+.h-failory4{
+    color: #ffffff;
+    display: inline;
+    margin-left:20%;
+    margin-top: 0.5%;
+    float:left;
+    display: flex;
+    position: absolute;
+   
+}
+.h-failory4  li :hover{
+    color: #ffff;
+    opacity: 0.7;  
+
+}
+.footer_social a,
+.h-failory3 ul,
+.h-failory4 ul,
+.h-failory4 a,
+.h-failory3 a{
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none; 
+    list-style: none;
+}
