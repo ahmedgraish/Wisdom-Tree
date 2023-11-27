@@ -44,7 +44,7 @@ nav{
     justify-content: center;
     height: 60vh;
     width: 100vw;
-    background-image: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url(/Assets/enrollmentNavBg.jpg);
+    background-image: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0,0.2)),url(/Assets/teachers2.jpg);
     background-size: cover;
     background-position:center;
     color: white;
@@ -335,29 +335,28 @@ nav h1 div{
     animation-delay: 3s;
 }
 
-.application1{
+.application{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     height: 50vh;
-    width: 100%;
     background-color: #e6e6e642;
     color: #38393a;
 }
-.application1 h1 {
+.application h1 {
     font-size: 3rem;
 }
-.application1 div,
-.application1 h1 > span{
+.application div,
+.application h1 > span{
     font-weight: 200;
     font-size: 2.3rem;
 }
-.application1 p{
+.application p{
     font-size: 1.2rem;
     color: #747474;
 }
-.application1 > div{
+.application > div{
     display: flex;
     align-items: center;
     position: absolute;
@@ -369,21 +368,21 @@ nav h1 div{
     color: #11396C;
     cursor: pointer;
 }
-.application1 div > span{
+.application div > span{
     z-index: 1000;
 }
-.application1 div > div{
+.application div > div{
     position: absolute;
     height: 100%;
     left: 0;
     border-radius: 10px;
     background-color: #90b6e9;
 }
-.application1 div:hover > span{
+.application div:hover > span{
     transition: all 0.8s ease;
     color: white;
 }
-.application1 div:hover  > div{
+.application div:hover  > div{
     animation: submit 0.8s ease forwards;
 }
 @keyframes submit {

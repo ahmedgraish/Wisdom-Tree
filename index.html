@@ -12,6 +12,16 @@
     <script src="https://kit.fontawesome.com/17ddf34e1a.js" crossorigin="anonymous"></script>
     <title>Wisdom Tree</title>
     <link rel="icon" href= "/Assets/logo.png" type="image/x-icon"> 
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+   </script>
+   <script> 
+  $(function(){
+  $("#footer").load("footer.html"); 
+ });
+ </script> 
   
      
      
@@ -27,7 +37,7 @@
                     <ul>
                        <li><a href="/Enrollment.html">Apply</a></li>
                        <li><a href="/studentLife.html">Student Life</a></li>
-                       <li><a href="">Our Staff</a></li>
+                       <li><a href="/Our_Staff.html">Our Staff</a></li>
                        <li><a href="#section_1" @click="registrationOverlay = true"><i class="fa-solid fa-user fa-xs"></i> My Tree</a> </li>
                     </ul>
                 </div>
@@ -130,56 +140,24 @@
             
         </div>
      
-        <footer class="footer_section">
-           
-                <div class="w-row">
-                   <div class="footer-column w-clearfix w-col w-col-4">
-                     <img src="/Assets/logo.png"  class="failory-logo-image">
-                   </div>
-                </div>
-                   
-
-                   <h2 class="h-failory">+21865564546</h2>
-                   <h3 class="h-failory2">The virtuous city next to Aflatoun Center</h3>
-                   
-                    <div class="h-failory3">
-                        <ul>
-                           <li><a href="">Apply</a></li>
-                           <br>
-                           <li><a href="">Student Life</a></li>
-                            <br>
-                           <li><a href="">Our Staff</a></li>
-                           <br>
-                          <li><a href=""> My Tree</a> </li>
-                        </ul>
-                    </div>
-                       <div class="h-failory4">
-                          <ul>
-                              <li><a href="">Apply</a></li>
-                              <br>
-                              <li><a href="">Student Life</a></li>
-                              <br>
-                              <li><a href="">Our Staff</a></li>
-                              <br>
-                               <li><a href=""> My Tree</a> </li>
-                           </ul>
-                       </div>
-                   
-                        <input class="navCertificates2"  type="text" placeholder=" Your Email address">
-                        <button class="navCertificates3" >submit</button>
-                      
-                        <div class="footer_social">
-                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="https://www.facebook.com/medianou/?locale=ar_AR"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                          </div>
         
-        </footer>
-        <!-- Footer -->
-
 
         
     </div>
+    <!-- start of footer -->
+    <div id="footer"></div>
+ 
+    <!-- end of footer section -->
+
+   
+
+
+<!-- jQery -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+</script>
+<!-- End Google Map-->
     <script src="index.js"></script>
 </body>
 </html>

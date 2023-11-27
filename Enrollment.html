@@ -11,7 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/17ddf34e1a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href= "/Assets/logo.png" type="image/x-icon"> 
+
     <title>Enrollment</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+   </script>
+   <script> 
+  $(function(){
+  $("#footer").load("footer.html"); 
+ });
+ </script> 
+  
+     
 </head>
 <body>
     <div id="app">
@@ -32,7 +46,7 @@
                     <input type="email" placeholder="Student Id">
                     <input type="password" placeholder="password">
                     <a href="">Sign In <i class="fa-solid fa-arrow-right fa-2xs" style="color: #ffffff; margin: 2% 5% 0;"></i></a>
-                    <span>Don't have an account? <a href="" style="text-underline-offset: 4px; color:#11386cb7;">contant IT dep</a></span>
+                    <span>Don't have an account? <a href="" style="text-underline-offset: 4px; color:#90b6e9;">contant IT dep</a></span>
                 </div>
                 <div class="panel">
                     <div></div>
@@ -89,13 +103,27 @@
             </section>
             
         </main>
-        <section class="application">
+        <section class="application1">
             <h1>Dont miss Your Spot ! <span>Apply Today</span></h1>
             <p>We are nearly full for the upcoming year,we are delighted to announce that we have a very limited number of openings in each of these grades.</p>
             <div onclick="window.location.href='ComingSoon.html'"><div></div> <span> Submit Your Application now !</span></div> 
         </section>
 
     </div>
+        <!-- start of footer -->
+        <div id="footer"></div>
+ 
+        <!-- end of footer section -->
+    
+       
+    
+    
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map-->
 
     <script src="enrollment.js"></script>
 </body>
