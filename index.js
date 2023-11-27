@@ -40,17 +40,10 @@ const app = Vue.createApp({
         },
 
         sectionNav(){
-<<<<<<< HEAD
-            if (window.scrollY< document.body.scrollHeight * 0.18) {
-                this.activeSection = 1
-            }
-            else if (window.scrollY > document.body.scrollHeight * 0.19 && window.scrollY < document.body.scrollHeight * 0.34 ) {
-=======
             if (window.scrollY< document.body.scrollHeight * 0.15) {
                 this.activeSection = 1
             }
             else if (window.scrollY > document.body.scrollHeight * 0.15 && window.scrollY < document.body.scrollHeight * 0.34 ) {
->>>>>>> 333ab65172ebb482a1c1c5ce0c5e91da22b1accf
                 this.activeSection = 2
             }
             else if (window.scrollY > document.body.scrollHeight * 0.34 && window.scrollY < document.body.scrollHeight * 0.60 ) {

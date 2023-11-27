@@ -344,6 +344,7 @@ nav h1 div{
     width: 100%;
     background-color: #e6e6e642;
     color: #38393a;
+    margin-bottom: 30vh;
 }
 .application1 h1 {
     font-size: 3rem;
@@ -366,7 +367,6 @@ nav h1 div{
     padding-inline: 2%;
     border-radius: 10px;
     border: 1px solid;
-    color: #11396C;
     cursor: pointer;
 }
 .application1 div > span{
@@ -377,7 +377,7 @@ nav h1 div{
     height: 100%;
     left: 0;
     border-radius: 10px;
-    background-color: #90b6e9;
+    background-color: #797f87;
 }
 .application1 div:hover > span{
     transition: all 0.8s ease;

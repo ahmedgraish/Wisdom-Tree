@@ -9,7 +9,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 500vh;
+    height: fit-content;
 }
 .navCertificates2{
     display: flex;
